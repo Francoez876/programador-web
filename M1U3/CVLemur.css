@@ -9,11 +9,13 @@ h1{
   font-size: 450%;
   border-bottom: 2px solid #7f500a54;
  
+ 
 }
 img{
     border: 4px solid #ff6550;
     height: 300px;
     margin: auto;
+    box-shadow: -1px 4px 60px 6px rgba(0,0,0,0.42);
 }
 .caja{
     display: flex;
@@ -41,8 +43,101 @@ h3{
     font-family: 'Times New Roman', Times, serif;
 }
 
-.caja2{
-    background-color: bisque;
+.caja-uno
+{
+    background-color: #EDBB99 ;
+    color: black;
+    font-size: 20px;
+    box-shadow: 5px 6px 17px 3px rgba(0,0,0,0.42);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    border-top: 5px #B9770E solid;
+    border-left: 5px #B9770E solid;
+    border-bottom: 5px #784212 solid;
+    border-right: 5px #784212 solid;
 }
+.caja-dos
+{
+    background-color: #EDBB99 ;
+    color: black;
+    font-size: 20px;
+    box-shadow: 5px 6px 17px 3px rgba(0,0,0,0.42);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    margin-top: 20px;
+    border-top: 5px #B9770E solid;
+    border-left: 5px #B9770E solid;
+    border-bottom: 5px #784212 solid;
+    border-right: 5px #784212 solid;
+   
+}
+.caja-tres
+{
+    background-color: #EDBB99 ;
+    color: black;
+    font-size: 20px;
+    box-shadow: 5px 6px 17px 3px rgba(0,0,0,0.42);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    margin-top: 20px;
+    border-top: 5px #B9770E solid;
+    border-left: 5px #B9770E solid;
+    border-bottom: 5px #784212 solid;
+    border-right: 5px #784212 solid;
+    
+}
+.caja-cuatro
+{
+    background-color: #EDBB99 ;
+    color: black;
+    font-size: 20px;
+    box-shadow: 5px 6px 17px 3px rgba(0,0,0,0.42);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    margin-top: 20px;
+    border-top: 5px #B9770E solid;
+    border-left: 5px #B9770E solid;
+    border-bottom: 5px #784212 solid;
+    border-right: 5px #784212 solid;
+ 
+}
+.caja-cinco
+{
+    background-color: #EDBB99 ;
+    color: black;
+    font-size: 20px;
+    box-shadow: 5px 6px 17px 3px rgba(0,0,0,0.42);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    margin-top: 20px;
+    border-top: 5px #B9770E solid;
+    border-left: 5px #B9770E solid;
+    border-bottom: 5px #784212 solid;
+    border-right: 5px #784212 solid;
+    
+}
+
+.contenedor
+{
+    width: 90%;
+    margin: auto;
+}
+.caja2
+{
+    background-color: bisque;
+    margin:auto;
+    margin-top: 20px;
+}
+
 
 
