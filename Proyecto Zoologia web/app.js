@@ -4,6 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+require('dotenv').config();
+var pool = require('./models/bd')
+
 var session = require("express-session")
 
 require("dotenv").config();
@@ -22,6 +25,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+//select
+//pool.query('select * from empleados').then(function(resultados){
+//  console.log(resultados)
+//});
+
+
 
 app.use(session({
   secret: "hsdhuyrbfjkfkkdfsjad",
