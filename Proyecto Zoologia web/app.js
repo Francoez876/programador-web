@@ -10,7 +10,7 @@ var session = require('express-session');
 
 var session = require("express-session")
 
-require("dotenv").config();
+require("dotenv").config(); 
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
