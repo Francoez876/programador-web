@@ -11,37 +11,34 @@
 </div>
 <div class="row my-3"> <!--INICIO DE NOVEDADES Y TESTIMONIOS-->
     <!--INICIO DE NOVEDADES-->
-    <div id="novedades" class="col-md-5 offset-md-2 scroll_section">
-        <h2 style="color: #B3BF54;">Novedades</h2>
+    <div id="novedades" class="col-md-5 offset-md-2 py-3 scroll_section">
+        <h2 style="color:#B3BF54">Novedades</h2>
         <ul class="lista-novedades">
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img
-                        src="images/novedades-icon.png">Animales 1</a></li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img
-                        src="images/novedades-icon.png">Animales 2</a></li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img
-                        src="images/novedades-icon.png">Animales 3</a></li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img }
-                        src="images/novedades-icon.png">Animales 4</a></li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img
-                        src="images/novedades-icon.png">Animales 5</a></li>
+            {{#each novedades}}
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal{{id}}">
+                    <img src="images/novedades-icon.png">{{titulo}}</a>
+            </li>
+            {{/each}}
         </ul>
-    </div> <!--CIERRE DE NOVEDADES-->
+    </div><!--CIERRE DE NOVEDADES-->
     <!-- INICIO DE Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    {{#each novedades}}
+    <div class="modal fade" id="exampleModal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Titulo</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">{{Titulo}}</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h3>Subtitulo</h3>
-                    <p>Cuerpo</p>
+                    <h3>{{Subtitulo}}</h3>
+                    <p>{{Cuerpo}}</p>
                 </div>
 
             </div>
         </div>
     </div>
+    {{/each}}
     <!--FIN DEL MODAL-->
     <div class="col-md-3 my-3" style="color: #B3BF54;">
         <div class="rounded py-5 testimonios">

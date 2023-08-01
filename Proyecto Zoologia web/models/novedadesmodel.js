@@ -13,6 +13,4 @@ async function deleteNovedadesById(id) {
         return rows;
 }
 
-module.export = {getNovedades, deleteNovedadesById}
-
-module.exports = { getNovedades }
+module.exports = { getNovedades, deleteNovedadesById }
