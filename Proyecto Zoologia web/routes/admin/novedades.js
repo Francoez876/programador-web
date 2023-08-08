@@ -64,9 +64,11 @@ router.get('/', async function(req, res, next) {
  router.post('/modificar', async (req, res, next) => {
    try {
       var obj = {
-         titulo: req.body.titulo,
+
+         titulo:req.body.titulo,
          subtitulo:req.body.subtitulo,
          cuerpo:req.body.cuerpo
+
       }
       console.log(obj)
       await novedadesmodel.modificarNovedadById(obj, req.body.id);

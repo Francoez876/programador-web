@@ -131,4 +131,25 @@ html{
     scroll-margin-top: 60px;
 }
 
+button{
+    background-color: #2C4001;
+    color: wheat;
+}
 
+button:hover{
+    color: #2C4001;
+    transition: 0.82s;
+    background-color: wheat;
+}
+
+#button-contactanos{
+    background-color:#2C4001; 
+    border-color:#B3BF54; 
+    color:#B3BF54;
+}
+
+#button-contactanos:hover{
+    transition: 0.80s;
+    background-color: #B3BF54;
+    color:#2C4001 ;
+}
