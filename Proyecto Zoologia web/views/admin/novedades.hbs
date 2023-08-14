@@ -24,6 +24,7 @@
                     <tr class="table-dark">
                         <th scope="col">#</th>
                         <th scope="col">Titulo</th>
+                         <th scope="col">Imagen</th>
                         <th scope="col" class="text-right">Acciones</th>
                     </tr>
                 </thead>
@@ -32,6 +33,7 @@
                     <tr style="color:whitesmoke;">
                         <th scope="row">{{id}}</th>
                         <td>{{Titulo}}</td>
+                        <td>{{{imagen}}}</td>
                         <td class="text-right">
                             <a href="/admin/novedades/modificar/{{id}}" class="btn btn-secondary"><i class="fas fa-pencil"></i>Modificar </a>
                             <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-secondary"><i class="fas fa-trash"></i>Eliminar</a>
